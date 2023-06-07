@@ -1,1 +1,28 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
+
+* {
+  padding: 0 !important;
+  margin: 0 !important;
+  box-sizing: border-box;
+}
+
+#root {
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.max-h-full {
+  max-height: 100vh;
+}
+
+#editor {
+  border: none;
+  min-height: calc(100vh - 56px);
+  resize: none;
+  border-radius: 0;
+}
+
+#editor:focus {
+  border: none;
+  box-shadow: none;
+}
