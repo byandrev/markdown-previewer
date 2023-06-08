@@ -19,7 +19,7 @@ function Wrapper() {
 
   return (
     <Row>
-      <Col xs={12} md={5} className="border-end max-h-full">
+      <Col xs={12} md={5} className="border-end border-dark-subtle max-h-full">
         <TitleTab title="Editor" />
         <Form>
           <Form.Group>
@@ -35,7 +35,7 @@ function Wrapper() {
       </Col>
       <Col xs={12} md={7} className="max-h-full overflow-y-scroll">
         <TitleTab title="Preview" />
-        <div ref={refOutput} className="px-4 py-2"></div>
+        <div ref={refOutput} id="preview" className="px-4 py-2"></div>
       </Col>
     </Row>
   );

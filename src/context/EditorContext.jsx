@@ -4,7 +4,7 @@ import { marked } from "marked";
 export const EditorContext = createContext();
 
 export default function EditorProvider({ children }) {
-  const [input, setInput] = useState("");
+  const [input, setInput] = useState("# Hello World!");
   const [output, setOutput] = useState("");
 
   useEffect(() => {
